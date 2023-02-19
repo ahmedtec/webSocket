@@ -30,6 +30,7 @@
       event.data.text().then((msg) => {
         console.log("event.data.text().then((msg) =>  ",msg);
         document.getElementById('message').innerHTML = msg;
+        new Notification(msg)
       });
     });
 
